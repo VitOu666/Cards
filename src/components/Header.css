@@ -1,0 +1,19 @@
+.header {
+    height: 8vh;
+    padding-top: 4vh;
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -3px 10px 5px #a0ffbe9c ;
+}
+
+a {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

@@ -1,0 +1,138 @@
+[
+    {
+      "id": "16439",
+      "english": "thunderstorm",
+      "transcription": " [ˈθʌndəstɔ:m] ",
+      "russian": "гроза",
+      "tags": "",
+      "tags_json": "[\"\"]"
+    },
+    {
+      "id": "16440",
+      "english": "blizzard",
+      "transcription": " [ˈblɪzəd] ",
+      "russian": "вьюга",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16441",
+      "english": "sun ",
+      "transcription": "[sʌn]",
+      "russian": "солнце",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16442",
+      "english": "river",
+      "transcription": " [ˈrɪvə] ",
+      "russian": "река",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16443",
+      "english": "valley",
+      "transcription": " [ˈvælɪ] ",
+      "russian": "долина",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16444",
+      "english": "pond",
+      "transcription": " [pɔnd] ",
+      "russian": "пруд",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16445",
+      "english": "snow",
+      "transcription": " [snəu] ",
+      "russian": "снег",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16446",
+      "english": "beach",
+      "transcription": " [bi:tʃ] ",
+      "russian": "пляж",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16455",
+      "english": "basket",
+      "transcription": "[basket]",
+      "russian": "корзина",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16457",
+      "english": "flower",
+      "transcription": "[ˈflaʊə(r)]",
+      "russian": "цветок",
+      "tags": "",
+      "tags_json": "[\"\"]"
+    },
+    {
+      "id": "16458",
+      "english": "grass",
+      "transcription": "[ɡrɑːs]",
+      "russian": "трава, газон",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16459",
+      "english": "bunch",
+      "transcription": "[bʌntʃ]",
+      "russian": "пучок, связка",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16460",
+      "english": "tree",
+      "transcription": "[tri:]",
+      "russian": "дерево",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16461",
+      "english": "birch",
+      "transcription": "[bə:tʃ]",
+      "russian": "береза",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16462",
+      "english": "petal",
+      "transcription": "[ˈpetl]",
+      "russian": "лепесток",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16486",
+      "english": "family",
+      "transcription": "[fa:mili]",
+      "russian": "семья",
+      "tags": "",
+      "tags_json": "[]"
+    },
+    {
+      "id": "16488",
+      "english": "ground",
+      "transcription": "ыыыыыы",
+      "russian": "вввввввввв",
+      "tags": "",
+      "tags_json": "[]"
+    }
+  ]

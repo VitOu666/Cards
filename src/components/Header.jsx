@@ -1,9 +1,14 @@
+import React from "react";
+import '../components/Header.css';
+
 export default function Header () {
     return (
-    <div>
+    <div className="header">
         <img src="" alt="logo" />
-        <button></button>
-        <a href=""></a>
+        <div>
+        <a href="">Проверь себя</a>
+        <a href="">Список слов</a>
+        </div>
     </div>
     );
 }
