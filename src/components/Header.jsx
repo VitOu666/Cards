@@ -1,14 +1,15 @@
 import React from "react";
 import '../components/Header.css';
 
-export default function Header () {
+const Header = ({ showTable, toggleTable }) => {
     return (
     <div className="header">
         <img src="" alt="logo" />
-        <div>
-        <a href="">Проверь себя</a>
-        <a href="">Список слов</a>
-        </div>
+        <button onClick={toggleTable}>
+        {showTable ? 'Карточки' : 'Список слов'}
+        </button>
     </div>
     );
 }
+
+export default Header;

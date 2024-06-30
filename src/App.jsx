@@ -1,13 +1,16 @@
 import React, { useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import words from './components/words.json';
+import initialWords from './components/words.json';
 import Card from './components/Card';
+import Table from './components/Table';
 import './App.css'
 
 const App = () => {
+  const [words, setWords] = useState(initialWords);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTranslation, setShowTranslation] = useState(false);
+  const [showTable, setShowTable] = useState(false);
 
   const goToNextCard = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
@@ -23,10 +26,29 @@ const App = () => {
     setShowTranslation(true);
   };
 
+  const toggleTable = () => {
+    setShowTable(!showTable);
+  };
+
+  const handleUpdateWord = (id, updatedWord) => {
+    setWords((prevWords) => prevWords.map((word) =>
+      word.id === id ? { ...word, ...updatedWord } : word
+    ));
+  };
+
+  const handleDeleteWord = (id) => {
+    setWords((prevWords) => prevWords.filter((word) => word.id !== id));
+  };
+
   return (
     
     <div className='full'>
-      <Header></Header>
+      <Header showTable={showTable} toggleTable={toggleTable} />
+      {showTable ? (
+        <Table words={words} 
+          onUpdateWord={handleUpdateWord} 
+          onDeleteWord={handleDeleteWord}  />
+      ) : (
       <div className="app">
       <button onClick={goToPreviousCard}>&lt; </button>
       <Card word={words[currentIndex]} 
@@ -34,6 +56,7 @@ const App = () => {
         onShowTranslation={handleShowTranslation} />
       <button onClick={goToNextCard}> &gt;</button>
       </div>
+      )}
       <Footer></Footer>
     </div>
   );
