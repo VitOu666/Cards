@@ -11,8 +11,9 @@
     margin-bottom: auto;
 }
 
-button {
-    background-color: #007bff;
+
+.card button{
+    background-color: #e15600;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -22,6 +23,6 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.card button:hover {
+    background-color: #e42e00;
 }

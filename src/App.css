@@ -12,4 +12,18 @@
 }
 
 
+button {
+  background-color: #6c4675;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #513058;
+}
+
 

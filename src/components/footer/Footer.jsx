@@ -1,15 +1,17 @@
 import React from "react";
-import '../components/Header.css';
+import './Footer.css';
 
-const Header = ({ showTable, toggleTable }) => {
+const Footer = ({ showTable, toggleTable }) => {
     return (
-    <div className="header">
+    <div className='footer'>
         <img src="" alt="logo" />
+        <div>
         <button onClick={toggleTable}>
         {showTable ? 'Карточки' : 'Список слов'}
         </button>
+        </div>
     </div>
     );
-}
+};
 
-export default Header;
+export default Footer
