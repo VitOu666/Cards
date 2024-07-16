@@ -1,11 +1,32 @@
 import React, { useState} from 'react';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Card from './components/card/Card';
-import Table from './components/table/Table';
+import Header from "./components/Header/Header.jsx";
 import data from "./components/words.json";
-import './App.css'
+import styles from './App.module.css';
+import { Routes, Route } from 'react-router-dom';
+import {Home, Game, Table, Error} from "./Pages/index.js"
 
+function App() {
+  const [words,setWords] = useState(data);
+  return(
+    <div className={styles.app}>
+    <header><Header></Header></header>
+    <main>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/game' element={<Game words={words} setWords={setWords}/>}></Route>
+        <Route path='/table' element={<Table words={words} setWords={setWords} />}></Route>
+        <Route path='*' element={<Error/>}></Route>
+      </Routes>
+    </main>
+    
+    </div>
+  );
+}
+
+export default App;
+
+
+/*
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTranslation, setShowTranslation] = useState(false);
@@ -26,28 +47,43 @@ const App = () => {
     setShowTranslation(true);
   };
 
-  const toggleTable = () => {
-    setShowTable(!showTable);
+  const showTableContent = () => {
+    setShowTable(true);
+  };
+
+  const showCardsContent = () => {
+    setShowTable(false);
+  };
+
+  const handleUpdateWord = (id, updatedWord) => {
+    setWords((prevWords) =>
+      prevWords.map((word) =>
+        word.id === id ? { ...word, ...updatedWord } : word
+      )
+    );
+  };
+
+  const handleDeleteWord = (id) => {
+    setWords((prevWords) => prevWords.filter((word) => word.id !== id));
   };
 
   return (
     
-    <div className='full'>
-      <Header showTable={showTable} toggleTable={toggleTable} />
+    <div className={styles.app}>
+      
       {showTable ? (
-        <Table/>
+        <Table
+          words={words}
+          onUpdateWord={handleUpdateWord}
+          onDeleteWord={handleDeleteWord}
+        />
       ) : (
-      <div className="app">
-      <button onClick={goToPreviousCard}>&lt; </button>
-      <Card word={words[currentIndex]} 
-        showTranslation={showTranslation} 
-        onShowTranslation={handleShowTranslation} />
-      <button onClick={goToNextCard}> &gt;</button>
-      </div>
+          </div>
+        </div>
       )}
-      <Footer></Footer>
     </div>
   );
 };
 
 export default App;
+*/

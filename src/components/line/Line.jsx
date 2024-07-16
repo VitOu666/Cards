@@ -1,71 +1,61 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import styles from "./Line.module.css"
 
-const Line = ({word, onDeleteWord}) => {
-    const [editing, setEditing] = useState(false);
-    const [editValues, setEditValues] = useState ({
-        english: word.english,
-        transcription: word.transcription,
-        russian: word.russian
-    });
+export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine }) {
+    const [editLine, setEditLine] = useState(true);
+    
+    const [engSt, setEngSt] = useState("");
+    const [tnsSt, setTnsSt] = useState("");
+    const [rusSt, setRusSt] = useState("");
 
-    const handleEditClick = () => {
-        setEditing(true);
-    };
 
-    const handleInputChange = (e) => {
-        const {name, value} = e.target;
-        setEditValues((prevValues) => ({
-            ...prevValues,
-            [name]: value
-        }));
-    };
 
-    const handleSaveClick = () => {
-        setEditing(false);
-    };
+useEffect(() => {
+    setEngSt(english);
+    setTnsSt(transcription);
+    setRusSt(russian);
+}, [english, transcription, russian]);
 
-    const handleCancelClick = () => {
-        setEditing(false);
-        setEditValues({
-            english: word.english,
-            transcription: word.transcription,
-            russian: word.russian
-        });
-    };
+function editLineLogic () {
+    setEditLine(false);
+}
+function cancelEdit () {
+    setEditLine(true);
+}
+
+function handleLineClick() {
+    if (selectedLine === id) {
+        setSelectedLine(null); // Deselect if the same line is clicked
+    } else {
+        setSelectedLine(id); // Select the new line
+    }
+}
+
 
     return (
-        <tr key={word.id}>
-            {editing ? (
-                <>
-                <td>
-                    <input type="text" name="english" value={editValues.english} onChange={handleInputChange} />
-                </td>
-                <td>
-                    <input type="text" name="transcription" value={editValues.transcription} onChange={handleInputChange} />
-                </td>
-                <td>
-                    <input type="text" name="russian" value={editValues.russian} onChange={handleInputChange} />
-                </td>
-                <td>
-                    <button onClick={handleSaveClick}>Save Editing</button>
-                    <button onClick={handleCancelClick}>Cancel Editing</button>
-                </td>
-                </>
-            ) : (
-                <>
-                <td> {editValues.english} </td>
-                <td> {editValues.transcription} </td>
-                <td> {editValues.russian} </td>
-                <td>
-                    <div className="actions">
-                    <button onClick={() => handleEditClick()}>Edit</button>
-                    <button onClick={() => onDeleteWord(word.id)}>Delete</button>
+        <div className={styles.containerLine} >
+            {editLine ? (
+                <div className={styles.content} onClick={handleLineClick}>
+                    <p>{english}</p>
+                    <p>{transcription}</p>
+                    <p>{russian}</p>
+                    {selectedLine === id ? (
+                        <div className={styles.editButtons}>
+                        <button onClick={editLineLogic} > <img src="src\assets\edit-pencil-line-01-svgrepo-com.svg" alt="edit" /></button>
+                        <button onClick={() => deleteItem(id)}> <img src="src\assets\delete-2-svgrepo-com.svg" alt="delete" /> </button>
                     </div>
-                </td>
-                </>
+                    ) : null}
+                    
+                </div>
+            ) : (
+                <div className={styles.editContent}>
+                    <input type="text" value={engSt} onChange={(e) => setEngSt(e.target.value)} />
+                    <input type="text" value={tnsSt} onChange={(e) => setTnsSt(e.target.value)} />
+                    <input type="text" value={rusSt} onChange={(e) => setRusSt(e.target.value)} />
+                    <button><img src="src\assets\done-v-svgrepo-com.svg" alt="save" /></button>
+                    <button onClick={cancelEdit}><img src="src\assets\undo-right-svgrepo-com.svg" alt="cancel" /></button>
+                </div>
             )}
-        </tr>
-    );
-};
-
-export default Line;
+        </div>
+    )
+}

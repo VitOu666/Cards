@@ -1,0 +1,35 @@
+.containerGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    margin: 10vh 0 15vh 0;
+    button {
+        color: white;
+        background-color: #B85CD8;
+        border-radius: 20px;
+        padding: 8px;
+        height: 35px;
+        width: 35px;
+        border: none;
+    }
+}
+
+.containerGame::before{
+    content: '';
+    position: absolute;
+    height: 35vh;
+    width: 21vw;
+    background-color: #BC9D87;
+    border-radius: 15px;
+    margin-top: 10vh;
+
+}
+.contentGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  }

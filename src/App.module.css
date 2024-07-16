@@ -1,0 +1,41 @@
+* {
+  font-family: sans-serif;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 430px;
+  margin: 0 auto;
+  background-color: #312037;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+tr:hover .actions {
+  visibility: visible;
+}
+/*
+.actions button {
+  visibility: hidden;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+*/
+

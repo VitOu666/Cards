@@ -1,20 +1,27 @@
-import React from "react";
-import './Card.css';
+import React, { useEffect, useState } from "react";
+import styles from './Card.module.css';
 
-const Card = ({ word, showTranslation, onShowTranslation }) => {
-    const { english, transcription, russian } = word;
+export default function Card ({ english, transcription, russian, id }) {
+    const [translate, setTranslate] = useState(false);
+
+    useEffect(() => {
+        setTranslate(false);
+    }, [id]);
 
     return (
-    <div className="card">
+    
+    <div className={styles.card}>
+        <div className={styles.content}>
         <h2>{english}</h2>
         <p>{transcription}</p>
-        {showTranslation ? (
+        {translate ? (
         <p>{russian}</p>
         ) : (
-        <button onClick={onShowTranslation}>Проверить</button>
+        <button className={styles.btnCheck} onClick={() => {
+            setTranslate(true);
+        }}>Check!</button>
         )}
+        </div>
     </div>
     );
 };
-
-export default Card;

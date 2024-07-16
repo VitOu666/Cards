@@ -1,0 +1,9 @@
+.containerTable {
+    margin: 20px;
+    min-height: 550px;
+    text-align: center;
+    h2 {
+      color: white;
+
+    }
+  }

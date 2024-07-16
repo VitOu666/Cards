@@ -1,15 +1,15 @@
 import React from "react";
-import './Header.css';
+import styles from './Header.module.css';
+import { NavLink } from "react-router-dom";
 
-const Header = ({ showTable, toggleTable }) => {
+export default function Header () {
     return (
-    <div className='header'>
-        <img src="" alt="logo" />
-        <button onClick={toggleTable}>
-        {showTable ? 'Карточки' : 'Список слов'}
-        </button>
+    <div className={styles.header}>
+        <div><img className={styles.logo} src="src\assets\WordWhiz.svg" alt="logo" /></div>
+        <div className={styles.btnContainer}>
+            <NavLink className={styles.btn} to="/table"><img src="src\assets\list-ul-alt-svgrepo-com.svg" alt=""/></NavLink>
+            <NavLink className={styles.btn} to="/game"><img src="src\assets\cards-svgrepo-com.svg" alt="" /></NavLink>
+        </div>
     </div>
     );
-}
-
-export default Header;
+};
