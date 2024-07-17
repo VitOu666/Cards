@@ -10,6 +10,22 @@ export default function Table({words, setWords}) {
     setWords(words.filter((word) => word.id!== id));
   }
 
+  function editWords( id, english, transcription, russian) {
+    setWords(
+      words.map((word) => {
+        if (word.id === id) {
+          return {
+            english: english,
+            transcription: transcription,
+            russian: russian,
+          };
+        }
+        return word;
+      })
+    )
+  }
+
+
   const [selectedLine, setSelectedLine] = useState(null);
 
   return (
@@ -26,6 +42,7 @@ export default function Table({words, setWords}) {
           deleteItem={deleteItem}
           selectedLine={selectedLine}
           setSelectedLine={setSelectedLine}
+          editWords={editWords}
           />
         ))
 

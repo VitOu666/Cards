@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./Line.module.css"
 
-export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine }) {
+export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine, editWords }) {
     const [editLine, setEditLine] = useState(true);
     
     const [engSt, setEngSt] = useState("");
@@ -52,7 +52,11 @@ function handleLineClick() {
                     <input type="text" value={engSt} onChange={(e) => setEngSt(e.target.value)} />
                     <input type="text" value={tnsSt} onChange={(e) => setTnsSt(e.target.value)} />
                     <input type="text" value={rusSt} onChange={(e) => setRusSt(e.target.value)} />
-                    <button><img src="src\assets\done-v-svgrepo-com.svg" alt="save" /></button>
+                    <button 
+                    onClick={() => {
+                        editWords(id, engSt, tnsSt, rusSt);
+                        setEditLine(true)
+                    }}><img src="src\assets\done-v-svgrepo-com.svg" alt="save" /></button>
                     <button onClick={cancelEdit}><img src="src\assets\undo-right-svgrepo-com.svg" alt="cancel" /></button>
                 </div>
             )}
