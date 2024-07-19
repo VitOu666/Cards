@@ -1,9 +1,18 @@
 .containerTable {
-    margin: 10px auto;
+    margin: 30px auto;
     min-height: 550px;
     text-align: center;
+    overflow: scroll;
     h2 {
       color: white;
 
     }
   }
+  @media (max-width: 420px)  {
+
+  }
+  
+  @media (min-width: 421px) and (max-width: 768px) {
+  
+  }
+  

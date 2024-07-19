@@ -68,3 +68,11 @@
         margin-top: 2px;
     }
 }
+@media (max-width: 420px)  {
+
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+
+}
+

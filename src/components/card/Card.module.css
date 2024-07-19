@@ -2,14 +2,17 @@
     background-color: #DAC3B2;
     border: 2px solid white;
     border-radius: 15px;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    height: 40vh;
+    align-content: center;
+    height: 300px;
     width: 240px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10vh;
-    margin-bottom: auto;
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
     .btnCheck{
         background-color: #e15600;
         border: 2px solid #c54c01;
@@ -22,9 +25,9 @@
                     6px 6px 10px rgba(0, 0, 0, .5);
         color: white;
         padding: 8px 46px;
-        margin: 20px 10px;
+        margin-top: 30px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 18px;
         border-radius: 5px;
         width: fit-content;
     }
@@ -34,5 +37,40 @@
                 -2px -2px 4px rgba(255, 255, 255, .4),
                 2px 2px 2px rgba(255, 255, 255, .05),
                 2px 2px 4px rgba(0, 0, 0, .1);
+    }
+}
+@media (max-width: 420px)  {
+    .card {
+        width: 200px;
+        height: 260px;
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .btnCheck{
+            font-size: 14px;
+            padding: 8px 40px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .card {
+        width: 200px;
+        height: 260px;
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .btnCheck{
+            font-size: 14px;
+            padding: 8px 40px;
+            margin-top: 30px;
+        }
     }
 }
