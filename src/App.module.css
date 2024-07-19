@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  margin: 0 0;
 }
 .app {
   display: flex;
@@ -15,27 +16,14 @@
     align-items: center;
   }
 }
-/*
-
-.actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-tr:hover .actions {
-  visibility: visible;
-}
-/*
-.actions button {
-  visibility: hidden;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 12px;
-  border-radius: 3px;
+@media (max-width: 420px)  {
+  .app {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
-*/
+@media (min-width: 421px) and (max-width: 768px) {
+    
+}
 

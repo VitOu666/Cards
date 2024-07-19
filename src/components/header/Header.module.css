@@ -37,3 +37,13 @@
     border-radius: 10px;
     margin-left: 20px;
 }
+@media (max-width: 420px)  {
+    .header {
+        height: 74px;
+        width: 320px;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    
+}
