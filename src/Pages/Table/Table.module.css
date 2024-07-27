@@ -1,11 +1,11 @@
 .containerTable {
     margin: 30px auto;
-    min-height: 550px;
     text-align: center;
-    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     h2 {
       color: white;
-
     }
   }
   @media (max-width: 420px)  {

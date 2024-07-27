@@ -1,4 +1,21 @@
-
+.containerHome {
+    color: white;
+    margin: 30vh 5vw;
+    h1 {
+        font-size: 3em;
+    }
+}
+.containerLinks {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    .link {
+        color: white;
+    }
+    .link:hover {
+        color: rgb(224, 158, 244);
+    }
+}
 
 @media (max-width: 420px)  {
 

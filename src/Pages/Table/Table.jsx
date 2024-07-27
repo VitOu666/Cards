@@ -31,7 +31,8 @@ export default function Table({words, setWords}) {
   return (
         <div className={styles.containerTable}>
         <h2>Here are all the words for now</h2>
-        {words.map((word) => (
+        <div className={styles.itemTable}>
+          {words.map((word) => (
           <Line
           key={word.id}
           id={word.id}
@@ -46,7 +47,7 @@ export default function Table({words, setWords}) {
           />
         ))
 
-        }
+        }</div>
         </div>
     )
     
