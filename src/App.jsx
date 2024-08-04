@@ -4,6 +4,7 @@ import data from "./components/words.json";
 import styles from './App.module.css';
 import { Routes, Route } from 'react-router-dom';
 import {Home, Game, Table, Error} from "./Pages/index.js"
+import AddWord from './Pages/AddWord/AddWord.jsx';
 
 function App() {
   const [words,setWords] = useState(data);
@@ -16,6 +17,7 @@ function App() {
         <Route path='/game' element={<Game words={words} setWords={setWords}/>}></Route>
         <Route path='/table' element={<Table words={words} setWords={setWords} />}></Route>
         <Route path='*' element={<Error/>}></Route>
+        <Route path='/new' element={<AddWord/>}></Route>
       </Routes>
     </main>
     

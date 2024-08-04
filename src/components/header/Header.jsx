@@ -9,8 +9,12 @@ export default function Header () {
             <NavLink className={styles.logo} to="/"><img src="src\assets\WordWhiz.svg" alt="logo" /></NavLink>
             </div>
         <div className={styles.btnContainer}>
-            <NavLink className={styles.btn} to="/table"><img src="src\assets\list-ul-alt-svgrepo-com.svg" alt=""/></NavLink>
-            <NavLink className={styles.btn} to="/game"><img src="src\assets\cards-svgrepo-com.svg" alt="" /></NavLink>
+            <NavLink className={({ isActive }) => 
+                        isActive ? `${styles.btn} ${styles.active}` : styles.btn
+                    }  to="/table"><img src="src\assets\list-ul-alt-svgrepo-com.svg" alt=""/></NavLink>
+            <NavLink className={({ isActive }) => 
+                        isActive ? `${styles.btn} ${styles.active}` : styles.btn
+                    } to="/game"><img src="src\assets\cards-svgrepo-com.svg" alt="" /></NavLink>
         </div>
     </div>
     );

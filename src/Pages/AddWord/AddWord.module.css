@@ -1,0 +1,24 @@
+.addWordContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+    gap: 8vh;
+    button {
+        background-color: #e15600;
+        border: 2px solid #c54c01;
+        text-align: center;
+        outline: none;
+        transition: .2s ease-in-out;
+        color: white;
+        padding: 8px 16px;
+        width: fit-content;
+        cursor: pointer;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-left: 3vw;
+    }
+    p {
+        color: white;
+    }
+}
