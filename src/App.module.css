@@ -4,31 +4,29 @@
 }
 .app {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  height: 780px;
-  width: 530px;
-  margin: 3vh auto;
-  background-color: #312037;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b152d;
   main {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-@media (max-width: 420px)  {
-  .app {
-    width: 320px;
-    margin: 0 auto;
-    height: 100vh;
+    margin: auto auto;
   }
 }
 
-@media (min-width: 421px) and (max-width: 768px) {
+@media (max-width: 700px)  {
   .app {
-    width: 400px;
-    margin: 0 auto;
-    height: 100vh;
+    flex-direction: column;
   }
+}
+
+@media (min-width: 701px) and (max-width: 1160px) {
+    
+}
+@media (min-width: 1161px) {
+    
 }
 

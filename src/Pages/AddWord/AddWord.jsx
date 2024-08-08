@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./AddWord.module.css";
+import styles from "./AddWord.module.scss";
 
 export default function AddWord () {
 
@@ -15,6 +15,7 @@ export default function AddWord () {
 
     return (
         <div className={styles.addWordContainer}>
+            <h2>Here you can add your own word</h2>
             <form onSubmit={handleSubmit}>
             <input onChange={(e) => setNewWord(e.target.value)} value={newWord}/>
             <button type='submit'>Add this word</button>

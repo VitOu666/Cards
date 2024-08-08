@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import styles from "./Line.module.css"
+import styles from "./Line.module.scss"
 
 export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine, editWords }) {
     const [editLine, setEditLine] = useState(true);

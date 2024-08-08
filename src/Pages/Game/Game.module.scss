@@ -1,33 +1,28 @@
+@import '../../index.scss';
+
 .wrapGame {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .infoGame {
-        color: white;
-        font-style: italic;
-        margin-top: 25px;
-    }
 }
 
 .containerGame {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
     position: relative;
-    margin-top: 160px;
     button {
         color: white;
-        background-color: #B85CD8;
+        background-color: $color-accent;
         border-radius: 20px;
         padding: 8px;
         height: 35px;
         width: 35px;
-        border: 2px solid #e085fc;
+        border: 2px solid $color-light-accent;
         outline: none;
         transition: .2s ease-in-out;
-        box-shadow: -6px -6px 14px #462a4fd3,
-                    -6px -6px 10px #46245171,
+        box-shadow: -6px -6px 14px #66666628,
+                    -6px -6px 10px #49494971,
                     6px 6px 8px rgba(255, 255, 255, .0),
                     6px 6px 10px rgba(0, 0, 0, .7);
         cursor: pointer;
@@ -47,7 +42,7 @@
     position: absolute;
     height: 260px;
     width: 280px;
-    background-color: #BC9D87;
+    background-color: $color-shade-green;
     border-radius: 15px;
 
 }
@@ -55,43 +50,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10vw;
     position: relative;
 
 }
 
-@media (max-width: 420px)  {
-    .containerGame {
-        align-items: center;
-        gap: 0;
-        margin: 15vh 0 15vh 0;
-        button {
-            font-size: 14px;
-        }
-    }
+@media (max-width: 700px)  {
     .containerGame::before{
-        height: 220px;
-        width: 230px;
+        display: none;    
     }
     .contentGame {
-        gap: 10px;
+        gap: 5vw;
     }
 }
 
-@media (min-width: 421px) and (max-width: 768px) {
-    .containerGame {
-        align-items: center;
-        gap: 0;
-        margin: 15vh 0 15vh 0;
-        button {
-            font-size: 14px;
-        }
-    }
-    .containerGame::before{
-        height: 220px;
-        width: 230px;
-    }
-    .contentGame {
-        gap: 25px;
-    }
+@media (min-width: 701px) and (max-width: 1160px) {
+
+}
+
+@media (min-width: 1161px) {
+
+    
 }

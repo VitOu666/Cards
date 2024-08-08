@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .containerHome {
     color: white;
     margin: 30vh 5vw;
@@ -17,10 +19,3 @@
     }
 }
 
-@media (max-width: 420px)  {
-
-}
-
-@media (min-width: 421px) and (max-width: 768px) {
-
-}

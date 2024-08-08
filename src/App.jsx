@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
-import Header from "./components/Header/Header.jsx";
-import data from "./components/words.json";
+import Header from "./Components/Header/Header.jsx";
+import data from "./Components/words.json";
 import styles from './App.module.css';
 import { Routes, Route } from 'react-router-dom';
 import {Home, Game, Table, Error} from "./Pages/index.js"

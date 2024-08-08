@@ -1,0 +1,130 @@
+@import '../../index.scss';
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10vh;
+
+    height: 100vh;
+    width: 200px;
+
+    background-color: $color-dark-blue;
+    border-right: $color-bright-blue solid 2px;
+}
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    gap: 2vh;
+    img {
+        width: 25px;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 7px;
+    }
+    .btn{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        background-color: $color-dark-blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 8px 10px;
+    }
+    .active {
+        border: $color-green solid 2px;
+        border-radius: 15px;
+    }
+}
+
+
+@media (max-width: 700px)  {
+    .header {
+        height: 65px;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .btnContainer {
+        flex-direction: row;
+        gap: 1vh;
+        p {
+            display: none;
+        }
+        img {
+                width: 15px;
+                border-radius: 15px;
+                padding: 4px;
+        }
+        .btn{
+            display: flex;
+            gap: 7px;
+        }
+    }
+    .logoContainer {
+        margin-top: 0;
+        .logo {
+            display: none;  
+        }
+        .logoAlt {
+            background-color: $color-bright-blue;
+            border-radius: 10px;
+            border: 2px solid $color-green;
+            cursor: pointer;
+            padding: 14px 10px 6px 10px;
+            margin-left: 5vh;   
+        }
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1160px) {
+    .header {
+        height: 100vh;
+        width: 80px;
+        flex-direction: column;
+    }
+    .btnContainer {
+        p {
+            display: none;
+        }
+        img {
+            width: 15px;
+    }
+    }
+    .logoContainer {
+        margin-top: 5vh;
+        .logoAlt{
+            background-color: $color-bright-blue;
+            border-radius: 10px;
+            border: 2px solid $color-green;
+            cursor: pointer;
+            padding: 14px 10px 6px 10px;        
+        }
+        .logo{
+            display: none; 
+        }
+    }
+}
+@media (min-width: 1161px) {
+    .logoContainer {
+        margin-top: 5vh;
+        .logo {
+            background-color: $color-bright-blue;
+            border-radius: 10px;
+            border: 2px solid $color-green;
+            cursor: pointer;
+            padding: 28px 36px 10px 36px;        
+        }
+        .logoAlt {
+            display: none;
+        }
+    }
+}
