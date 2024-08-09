@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "../../Components/Card/Card.jsx";
+import Card from "../../Components/Card/Card.js";
 import styles from "./Game.module.scss";
 
 export default function Game({words,setWords}) {
