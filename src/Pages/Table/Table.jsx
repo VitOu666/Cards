@@ -10,14 +10,13 @@ export default function Table({words, setWords}) {
     setWords(words.filter((word) => word.id!== id));
   }
 
-  function editWords( id, english, transcription, russian) {
+  function editWords( id, updatedWord) {
     setWords(
       words.map((word) => {
         if (word.id === id) {
           return {
-            english: english,
-            transcription: transcription,
-            russian: russian,
+            ...word,
+            ...updatedWord,
           };
         }
         return word;
