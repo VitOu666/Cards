@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import styles from "./Table.module.scss";
-import Line from "../../Components/Line/Line";
+import Line from "../../Components1/Line/Line";
 import { NavLink } from "react-router-dom";
 
 

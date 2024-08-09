@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./Line.module.scss";
 import { validForm } from './validForm';
-import Input from '../Input/Input';
+import Input from '../Input1/Input';
 
 export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine, editWords }) {
     const [editLine, setEditLine] = useState(true);
