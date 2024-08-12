@@ -113,17 +113,3 @@ const handleClick = (e) => {
         </div>
     )
 }
-
-/*
-editWords(id, engSt, tnsSt, rusSt);
-
-                    <input type="text" value={engSt} onChange={(e) => setEngSt(e.target.value)} />
-                    <input type="text" value={tnsSt} onChange={(e) => setTnsSt(e.target.value)} />
-                    <input type="text" value={rusSt} onChange={(e) => setRusSt(e.target.value)} />
-
-                                        <button 
-                    onClick={() => {
-                        editWords(id, engSt, tnsSt, rusSt);
-                        setEditLine(true)
-                    }}><img src="src\assets\done-v-svgrepo-com.svg" alt="save" /></button>
-*/

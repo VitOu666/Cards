@@ -1,31 +1,21 @@
-import React, {useState} from "react";
+import React, { useContext, useState } from "react";
 import styles from "./Table.module.scss";
 import Line from "../../Components/Line/Line";
 import { NavLink } from "react-router-dom";
+import { MyContext } from "../../Context/MyContext";
+import Loading from "../../Components/Loading/Loading";
 
 
-export default function Table({words, setWords}) {
-    
-  function deleteItem(id) {
-    setWords(words.filter((word) => word.id!== id));
-  }
+export default function Table() {
 
-  function editWords( id, updatedWord) {
-    setWords(
-      words.map((word) => {
-        if (word.id === id) {
-          return {
-            ...word,
-            ...updatedWord,
-          };
-        }
-        return word;
-      })
-    )
-  }
+  const { data: words, loading, error, deleteWord, editWord } = useContext(MyContext);
 
 
   const [selectedLine, setSelectedLine] = useState(null);
+
+  
+  if (loading) return <div> <Loading></Loading> </div>;
+  if (error) return <div>Error: {error.message}</div>;
 
   return (
         <div className={styles.containerTable}>
@@ -40,11 +30,10 @@ export default function Table({words, setWords}) {
               english={word.english}
               transcription={word.transcription}
               russian={word.russian}
-              setWords={setWords}
-              deleteItem={deleteItem}
+              deleteItem={deleteWord}
               selectedLine={selectedLine}
               setSelectedLine={setSelectedLine}
-              editWords={editWords}
+              editWords={editWord}
             />
             ))
             } </div>

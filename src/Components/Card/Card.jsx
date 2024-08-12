@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from './Card.module.scss';
-import '../../index.scss'
+import '../../index.scss';
 
-export default function Card ({ english, transcription, russian, id }) {
+export default function Card ({ english, transcription, russian }) {
+
 const [translate, setTranslate] = useState(false);
-const [countWords, setCountWords] = useState(0) // Объявляем состояние в которой будем хранить количество слов
+const [countWords, setCountWords] = useState(0); // Объявляем состояние в которой будем хранить количество слов
 const buttonRef = useRef(null);
 
 useEffect(() => {
@@ -12,7 +13,7 @@ setTranslate(false);
 if (buttonRef.current) {
     buttonRef.current.focus();
 }
-}, [id]);
+}, [english, transcription, russian]);
 
 return (
 
