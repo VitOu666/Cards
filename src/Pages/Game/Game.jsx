@@ -5,7 +5,7 @@ import { WordsContext } from "../../Context/WordsContext.jsx";
 import Loading from "../../Components/Loading/Loading.jsx";
 
 export default function Game() {
-    const { data: words, loading, error } = useContext(MyContext);
+    const { data: words, loading, error } = useContext(WordsContext);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     function handleNext() {

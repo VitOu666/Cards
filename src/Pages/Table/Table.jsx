@@ -8,7 +8,7 @@ import Loading from "../../Components/Loading/Loading";
 
 export default function Table() {
 
-  const { data: words, loading, error, deleteWord, editWord } = useContext(MyContext);
+  const { data: words, loading, error, deleteWord, editWord } = useContext(WordsContext);
 
 
   const [selectedLine, setSelectedLine] = useState(null);
