@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import styles from "./Table.module.scss";
 import Line from "../../Components/Line/Line";
 import { NavLink } from "react-router-dom";
-import { MyContext } from "../../Context/MyContext";
+import { WordsContext } from "../../Context/WordsContext";
 import Loading from "../../Components/Loading/Loading";
 
 

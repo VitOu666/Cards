@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import './index.scss'
-import { MyProvider } from './Context/MyContext.jsx'
+import { WordsProvider } from '../src/Context/WordsContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MyProvider>
+    <WordsProvider>
     <BrowserRouter>
     <App />
     </BrowserRouter>
-    </MyProvider>
+    </WordsProvider>
   </React.StrictMode>,
 )

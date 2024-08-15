@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Card from "../../Components/Card/Card.jsx";
 import styles from "./Game.module.scss";
-import { MyContext } from "../../Context/MyContext.jsx";
+import { WordsContext } from "../../Context/WordsContext.jsx";
 import Loading from "../../Components/Loading/Loading.jsx";
 
 export default function Game() {
