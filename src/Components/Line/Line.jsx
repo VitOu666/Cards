@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./Line.module.scss";
-import { validForm } from './validForm';
+import { validForm } from '../../Utils/validForm';
 import Input from '../Input/Input';
 
 export default function Line ({english, transcription, russian, deleteItem, id, selectedLine, setSelectedLine, editWords }) {
