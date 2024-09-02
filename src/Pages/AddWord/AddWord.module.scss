@@ -8,12 +8,14 @@
     margin: auto 10vw;
     gap: 8vh;
     button {
-
+        @extend %shared-styles;
+        @extend %oval-btn;
         background-color: $color-bright-blue;
         border: 2px solid $lightShadow;
+        color: white;
+
         text-align: center;
         outline: none;
-        color: white;
         padding: 8px 16px;
         width: fit-content;
         cursor: pointer;
@@ -27,6 +29,9 @@
     }
     h2 {
         color: $color-text-light;
+    }
+    input {
+        @extend %shared-styles;
     }
 }
 

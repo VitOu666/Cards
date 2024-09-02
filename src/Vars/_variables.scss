@@ -24,11 +24,11 @@ $color-shade-green: #97d660;
 $darkShadow: #484f60;
 $lightShadow: #FFFFFF;
 
-$dropShadow: 8px 8px 12px -2px rgba($darkShadow, 0.4),
-             -6px -6px 12px -1px rgba($lightShadow, 1);
+$dropShadow: 8px 8px 12px -2px rgba($darkShadow, 0.2),
+             -6px -6px 12px -1px rgba($lightShadow, 0.2);
 
-$innerShadow: inset -4px -4px 6px -1px rgba($lightShadow, 1),
-              inset 2px 2px 8px -1px rgba($darkShadow, 0.5);
+$innerShadow: inset -4px -4px 6px -1px rgba($lightShadow, 0.2),
+              inset 2px 2px 8px -1px rgba($darkShadow, 0.2);
 
 // Mixins
 
@@ -109,6 +109,8 @@ button {
 input {
   @extend %shared-styles;
   box-shadow: $innerShadow;
+  height: 8vh;
+  border-radius: 10px;
   
   &:focus {
     box-shadow: none;

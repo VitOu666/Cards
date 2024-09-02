@@ -28,6 +28,8 @@
         padding: 7px;
     }
     .btn{
+        @extend %shared-styles;
+        @extend %oval-btn;
         display: flex;
         gap: 15px;
         align-items: center;
