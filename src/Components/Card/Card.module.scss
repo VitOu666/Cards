@@ -1,7 +1,7 @@
 @import '../src/Vars/variables.scss';
 
 .card {
-    background-color: $color-light-accent;
+    background-color: $color-text-light;
     border: none;
     border-radius: 15px;
     align-content: center;
@@ -35,7 +35,7 @@
         text-align: center;
         outline: none;
         transition: .2s ease-in-out;
-        color: $color-accent;
+        color: $color-text-dark;
         padding: 8px 46px;
         margin-top: 30px;
         font-size: 18px;
@@ -45,7 +45,7 @@
     }
 
     .btnCheck:focus {
-        background-color: $color-neu-green;
+        background-color: $color-accent;
     }
 }
 .content {

@@ -13,12 +13,12 @@
     position: relative;
     button {
         color: $color-text-light;
-        background-color: $color-green;
+        background-color: $color-bright-blue;
         border-radius: 20px;
         padding: 8px;
         height: 35px;
         width: 35px;
-        border: 2px solid $color-bright-green;
+        border: 2px solid $color-green;
         outline: none;
 
         font-size: 16px;
@@ -32,7 +32,7 @@
     position: absolute;
     height: 260px;
     width: 280px;
-    background-color: $color-shade-green;
+    background-color: $color-base;
     border-radius: 15px;
 
 }

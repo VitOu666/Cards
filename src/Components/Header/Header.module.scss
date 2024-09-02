@@ -31,16 +31,17 @@
         display: flex;
         gap: 15px;
         align-items: center;
-        background-color: $color-bright-blue;
+        background-color: $color-back;
         color: $color-text-light;
         border: none;
         cursor: pointer;
         text-decoration: none;
         font-weight: 700;
         padding: 8px 10px;
+        width: 13vw;
     }
     .active {
-        border: $color-accent solid 2px;
+        border: $color-bright-green solid 2px;
         border-radius: 15px;
     }
 }
@@ -75,9 +76,9 @@
             display: none;  
         }
         .logoAlt {
-            background-color: $color-accent;
+            background-color: $color-bright-blue;
             border-radius: 10px;
-            border: 2px solid $color-bright-blue;
+            border: 2px solid $color-green;
             cursor: pointer;
             padding: 14px 10px 6px 10px;
             margin-left: 5vh;   
@@ -102,9 +103,9 @@
     .logoContainer {
         margin-top: 5vh;
         .logoAlt{
-            background-color: $color-accent;
+            background-color: $color-bright-blue;
             border-radius: 10px;
-            border: 2px solid $color-bright-blue;
+            border: 2px solid $color-green;
             cursor: pointer;
             padding: 14px 10px 6px 10px;        
         }
@@ -117,9 +118,9 @@
     .logoContainer {
         margin-top: 5vh;
         .logo {
-            background-color: $color-accent;
+            background-color: $color-bright-blue;
             border-radius: 10px;
-            border: 2px solid $color-bright-blue;
+            border: 2px solid $color-green;
             cursor: pointer;
             padding: 28px 36px 10px 36px;        
         }

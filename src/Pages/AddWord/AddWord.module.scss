@@ -1,5 +1,6 @@
 @import '../src/Vars/variables.scss';
 
+
 .addWordContainer {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     margin: auto 10vw;
     gap: 8vh;
     button {
+
         background-color: $color-bright-blue;
         border: 2px solid $lightShadow;
         text-align: center;
@@ -17,7 +19,7 @@
         cursor: pointer;
         font-size: 14px;
         font-weight: 700;
-        border-radius: 5px;
+        border-radius: 15px;
         margin-left: 3vw;
     }
     p {
