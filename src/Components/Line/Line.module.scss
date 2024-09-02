@@ -1,8 +1,8 @@
 @import '../src/Vars/variables.scss';
 
 .containerLine {
-    border: 2px solid $brightBlue;
-    background-color: $brightBlue;
+    border: 2px solid $color-shade-green;
+    background-color: $color-accent;
     border-radius: 0 8px 8px 0;
     width: 40vw;
     transition: transform 0.3s ease;
@@ -41,7 +41,7 @@
             max-width: 15px;
         }
         button {
-            background-color: $acColor;
+            background-color: $color-accent;
             border: none;
             border-radius: 10px;
             margin: 0 1px;
@@ -57,7 +57,7 @@
         margin: 5px 0;
     }
     button {
-        background-color: $acColor;
+        background-color: $color-bright-blue;
         border: none;
         border-radius: 5px;
         margin: 5px;

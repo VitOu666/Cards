@@ -1,7 +1,7 @@
 @import '../src/Vars/variables.scss';
 
 .card {
-    background-color: $bgColor;
+    background-color: $color-light-accent;
     border: none;
     border-radius: 15px;
     align-content: center;
@@ -30,12 +30,12 @@
         
         & > * { vertical-align: middle; }
         & > span:last-child { padding-left: 8px; }
-        background-color: $iconColor;
+        background-color: $color-accent;
         border: none;
         text-align: center;
         outline: none;
         transition: .2s ease-in-out;
-        color: $acColor;
+        color: $color-accent;
         padding: 8px 46px;
         margin-top: 30px;
         font-size: 18px;
@@ -45,7 +45,7 @@
     }
 
     .btnCheck:focus {
-        background-color: $bgColor;
+        background-color: $color-neu-green;
     }
 }
 .content {
@@ -56,7 +56,7 @@
         font-size: 14px;
     }
     .accentNum {
-        color: $accentBlue;
+        color: $color-bright-blue;
         font-size: 16px;
         font-weight: 700;
     }

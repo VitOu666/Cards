@@ -12,29 +12,19 @@
     align-items: center;
     position: relative;
     button {
-        color: white;
-        background-color: $acColor;
+        color: $color-text-light;
+        background-color: $color-green;
         border-radius: 20px;
         padding: 8px;
         height: 35px;
         width: 35px;
-        border: 2px solid $brightBlue;
+        border: 2px solid $color-bright-green;
         outline: none;
-        transition: .2s ease-in-out;
-        box-shadow: -6px -6px 14px #66666628,
-                    -6px -6px 10px #49494971,
-                    6px 6px 8px rgba(255, 255, 255, .0),
-                    6px 6px 10px rgba(0, 0, 0, .7);
-        cursor: pointer;
+
         font-size: 16px;
         font-weight: 700;
     }
-    button:hover {
-        box-shadow: -2px -2px 6px #462a4fd3,
-                -2px -2px 4px #46245171,
-                2px 2px 2px rgba(255, 255, 255, .05),
-                2px 2px 4px rgba(0, 0, 0, .1);
-    }
+
 }
 
 .containerGame::before{
@@ -42,7 +32,7 @@
     position: absolute;
     height: 260px;
     width: 280px;
-    background-color: $brightBlue;
+    background-color: $color-shade-green;
     border-radius: 15px;
 
 }

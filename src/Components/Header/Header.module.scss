@@ -11,8 +11,8 @@
     height: 100vh;
     width: 200px;
 
-    background-color: $bgColor;
-    border-right: $brightBlue solid 2px;
+    background-color: $color-back;
+    border-right: $color-bright-blue solid 2px;
 }
 .btnContainer {
     display: flex;
@@ -23,7 +23,7 @@
     gap: 2vh;
     img {
         width: 25px;
-        border: 2px solid white;
+        border: 2px solid $color-text-light;
         border-radius: 20px;
         padding: 7px;
     }
@@ -31,8 +31,8 @@
         display: flex;
         gap: 15px;
         align-items: center;
-        background-color: $accentBlue;
-        color: white;
+        background-color: $color-bright-blue;
+        color: $color-text-light;
         border: none;
         cursor: pointer;
         text-decoration: none;
@@ -40,7 +40,7 @@
         padding: 8px 10px;
     }
     .active {
-        border: $acColor solid 2px;
+        border: $color-accent solid 2px;
         border-radius: 15px;
     }
 }
@@ -75,9 +75,9 @@
             display: none;  
         }
         .logoAlt {
-            background-color: $acColor;
+            background-color: $color-accent;
             border-radius: 10px;
-            border: 2px solid $brightBlue;
+            border: 2px solid $color-bright-blue;
             cursor: pointer;
             padding: 14px 10px 6px 10px;
             margin-left: 5vh;   
@@ -102,9 +102,9 @@
     .logoContainer {
         margin-top: 5vh;
         .logoAlt{
-            background-color: $acColor;
+            background-color: $color-accent;
             border-radius: 10px;
-            border: 2px solid $brightBlue;
+            border: 2px solid $color-bright-blue;
             cursor: pointer;
             padding: 14px 10px 6px 10px;        
         }
@@ -117,9 +117,9 @@
     .logoContainer {
         margin-top: 5vh;
         .logo {
-            background-color: $acColor;
+            background-color: $color-accent;
             border-radius: 10px;
-            border: 2px solid $brightBlue;
+            border: 2px solid $color-bright-blue;
             cursor: pointer;
             padding: 28px 36px 10px 36px;        
         }

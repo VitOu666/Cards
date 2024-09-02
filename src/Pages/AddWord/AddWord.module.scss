@@ -7,7 +7,7 @@
     margin: auto 10vw;
     gap: 8vh;
     button {
-        background-color: $acColor;
+        background-color: $color-bright-blue;
         border: 2px solid $lightShadow;
         text-align: center;
         outline: none;
@@ -21,10 +21,10 @@
         margin-left: 3vw;
     }
     p {
-        color: white;
+        color: $color-text-light;
     }
     h2 {
-        color: white;
+        color: $color-text-light;
     }
 }
 
