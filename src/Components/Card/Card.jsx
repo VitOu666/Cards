@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from './Card.module.scss';
-import '../../index.scss';
+import '../../Vars/_colors.scss';
 
 export default function Card ({ english, transcription, russian }) {
 

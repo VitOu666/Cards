@@ -17,9 +17,7 @@ export default function Game() {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + words.length) % words.length);
     }
 
-    if (loading) return <div>
-    <Loading></Loading>
-    </div>;
+    if (loading) return <Loading />;
     if (error) return <div>Error: {error.message}</div>;
     if (words.length === 0) return <div>No words available</div>;
 

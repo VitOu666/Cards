@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../src/Vars/variables.scss';
 
 .addWordContainer {
     display: flex;
@@ -7,8 +7,8 @@
     margin: auto 10vw;
     gap: 8vh;
     button {
-        background-color: $color-accent;
-        border: 2px solid $color-light-accent;
+        background-color: $acColor;
+        border: 2px solid $lightShadow;
         text-align: center;
         outline: none;
         color: white;

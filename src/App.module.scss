@@ -1,5 +1,7 @@
+@import '../src/Vars/variables.scss';
+
 * {
-  font-family: sans-serif;
+  font-family: $fontFamily;
   margin: 0 0;
 }
 .app {
@@ -8,7 +10,7 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #1b152d;
+  background-color: $bgColor;
   main {
     display: flex;
     justify-content: center;

@@ -1,8 +1,8 @@
-@import '../../index.scss';
+@import '../src/Vars/variables.scss';
 
 .containerLine {
-    border: 2px solid $color-shade-green;
-    background-color: $color-neu-green;
+    border: 2px solid $brightBlue;
+    background-color: $brightBlue;
     border-radius: 0 8px 8px 0;
     width: 40vw;
     transition: transform 0.3s ease;
@@ -20,20 +20,20 @@
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-left: none;
-            border-right: 2px solid $color-shade-green;
+            border-right: 2px solid $lightShadow;
         }
         p:nth-child(2) {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
-            border-left: 2px solid $color-shade-green;
-            border-right: 2px solid $color-shade-green;
+            border-left: 2px solid $lightShadow;
+            border-right: 2px solid $lightShadow;
         }
         p:last-child {
             border-top-right-radius: 7px;
             border-bottom-right-radius: 7px;
-            border-left: 2px solid $color-shade-green;
+            border-left: 2px solid $lightShadow;
             border-right: none;
 
         }
@@ -41,7 +41,7 @@
             max-width: 15px;
         }
         button {
-            background-color: $color-accent;
+            background-color: $acColor;
             border: none;
             border-radius: 10px;
             margin: 0 1px;
@@ -57,7 +57,7 @@
         margin: 5px 0;
     }
     button {
-        background-color: $color-accent;
+        background-color: $acColor;
         border: none;
         border-radius: 5px;
         margin: 5px;

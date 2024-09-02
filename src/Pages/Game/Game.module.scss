@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../src/Vars/variables.scss';
 
 .wrapGame {
     display: flex;
@@ -13,12 +13,12 @@
     position: relative;
     button {
         color: white;
-        background-color: $color-accent;
+        background-color: $acColor;
         border-radius: 20px;
         padding: 8px;
         height: 35px;
         width: 35px;
-        border: 2px solid $color-light-accent;
+        border: 2px solid $brightBlue;
         outline: none;
         transition: .2s ease-in-out;
         box-shadow: -6px -6px 14px #66666628,
@@ -42,7 +42,7 @@
     position: absolute;
     height: 260px;
     width: 280px;
-    background-color: $color-shade-green;
+    background-color: $brightBlue;
     border-radius: 15px;
 
 }

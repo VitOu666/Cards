@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../../Vars/variables.scss';
 
 .containerTable {
   display: flex;
@@ -26,18 +26,18 @@
     .itemTable::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
       border-radius: 10px;
-      background-color: $color-dark-blue;
+      background-color: $brightBlue;
     }
 
     .itemTable::-webkit-scrollbar {
       width: 12px;
-      background-color: $color-back-blue;
+      background-color: $brightBlue;
     }
 
     .itemTable::-webkit-scrollbar-thumb {
       border-radius: 10px;
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: $color-bright-blue;
+      background-color: $brightBlue;
     }
 
     h2 {
